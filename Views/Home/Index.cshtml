@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IndexView;
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>You have clicked the button this many times: @Model.Clicked</p>
+    <p>Here's your random string: @Model.NewRandom()</p>
+    <form action="PressButton" method="POST">
+        <button>Click me!</button>
+    </form>
+</div>
